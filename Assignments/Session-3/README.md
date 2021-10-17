@@ -16,14 +16,16 @@ Network can be written with fully connected layers and convolution layers.
 
 ## Data representation:
 
-Custom dataset that returns:
-```python
-return image, label, rand_num_ohe, sum
-```
+The data is represented into 4 parts:
 - An image from MNIST dataset is used as one of the input to the model. It contains 70,000 images of handwritten digits: 60,000 for training and 10,000 for testing.
 - The label of the image.
 - A random number.
-- Sum. 
+- The Sum. 
+
+Custom dataset returns the same:
+```python
+return image, label, rand_num_ohe, sum
+```
 
 ## Data Generation:
 
@@ -31,7 +33,7 @@ Custom dataset is generated with help of MNIST dataset using '\_\_getitem\_\_' m
 - The image (28x28).
 - label.
 - A random number (0-9) which is represented by one-hot encoding.
-- Sum (label+random number). 
+- The Sum (label+random number). 
 
 ## Model
 
@@ -62,9 +64,13 @@ Test set: Average loss: 1.296 MNist Accuracy: 94.29 Sum_Accuracy: 14.32
 Epoch 3 : 
 loss=1.185538411140442 batch_id=467: 100%|██████████| 468/468 [00:39<00:00, 11.78it/s]
 Test set: Average loss: 1.207 MNist Accuracy: 96.57 Sum_Accuracy: 18.48
+
 .
+
 .
+
 .
+
 Epoch 18 : 
 loss=0.11908458918333054 batch_id=467: 100%|██████████| 468/468 [00:39<00:00, 11.82it/s]
 Test set: Average loss: 0.142 MNist Accuracy: 98.99 Sum_Accuracy: 98.72
