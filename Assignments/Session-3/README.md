@@ -8,7 +8,7 @@ Take 2 inputs:
 
 and gives two outputs:
 - The "number" that was represented by the MNIST image (predict 5), and
-- The "sum" of this number with the random number that was input to the network (predict 5 + 7 = 12, accuracy is not really important for the sum)
+- The "sum" of this number with the random number that was input to the network (predict 5 + 7 = 13, accuracy is not really important for the sum)
 
 ![image](https://user-images.githubusercontent.com/48423396/137637066-e5a4294f-ab4a-4803-8266-d604c0660b0d.png)
 
